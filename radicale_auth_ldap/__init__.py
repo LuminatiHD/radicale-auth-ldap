@@ -197,5 +197,5 @@ class Auth(BaseAuth):
                 logger.error("LDAP error %s" % err)
             return ""
         else:
-            logger.error("LDAP user %s not found" % user)
+            logger.error("LDAP user %s not found" % distinguished_name)
             return ""
